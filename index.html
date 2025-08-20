@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhairya | Portfolio</title>
+
+    <meta name="description" content="Dhairya — Engineering student portfolio. Projects, experience, education, certifications, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="#" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="scroll-progress"></div>
+    <canvas id="bg-stars" aria-hidden="true"></canvas>
+    <canvas id="scene3d" aria-hidden="true"></canvas>
+    <div id="fx" class="fx-layer" aria-hidden="true"></div>
+    <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+    <div id="cursor" class="custom-cursor" aria-hidden="true"></div>
+
+    <header class="nav">
+      <div class="nav__inner">
+        <a href="#home" class="brand" aria-label="Go to home">Dhairya</a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav__menu" id="navMenu">
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#work" class="nav__link">Work</a>
+          <a href="#education" class="nav__link">Education</a>
+          <a href="#certifications" class="nav__link">Certifications</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="section hero">
+        <div class="container grid hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow reveal-on-scroll">Hi, I'm</p>
+            <h1 class="title-xl gradient-text reveal-on-scroll">
+              <span id="animated-name" data-text="Dhairya" data-alt-text="Meck">Dhairya</span>
+            </h1>
+            <h2 class="title-md reveal-on-scroll">Engineering Student</h2>
+            <p class="muted reveal-on-scroll">
+              Always learning, being creative, and building cool things with code and AI.
+            </p>
+            <div class="cta-group reveal-on-scroll">
+              <a class="btn btn--primary" href="resume dhairya new.pdf" target="_blank" rel="noopener noreferrer">My Resume</a>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+            </div>
+            <div class="hero__stats">
+              <div class="stat reveal-on-scroll"><span class="stat__num" data-count="2023">0</span><span class="stat__label">Started Learning</span></div>
+              <div class="stat reveal-on-scroll"><span class="stat__num" data-count="20">0</span><span class="stat__label">Years Old</span></div>
+            </div>
+            <div class="age-timer reveal-on-scroll">
+              <p class="timer-label">Existing Since</p>
+              <div class="timer-display">
+                <span id="years">0</span>y <span id="months">0</span>m <span id="days">0</span>d <span id="hours">0</span>h <span id="minutes">0</span>m <span id="seconds">0</span>s
+              </div>
+            </div>
+          </div>
+          <div class="hero__media reveal-on-scroll">
+            <div class="avatar-wrap">
+              <img src="picture1.jpg" alt="Profile photo of Dhairya" class="avatar" />
+              <div class="glow"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About"></a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h3 class="section__title reveal-on-scroll">About Me</h3>
+          <div class="grid about__grid">
+            <div class="about__text reveal-on-scroll">
+              <p>
+                Engineering student specializing in Artificial Intelligence and Machine Learning with a strong foundation in Python and data science. Skilled in developing and evaluating machine learning models, data preprocessing, and visualization. Eager to apply my technical knowledge and problem-solving abilities to real-world challenges in Python development or data science roles. Actively seeking opportunities to contribute to impactful projects while growing in a collaborative, learning-driven environment.
+              </p>
+              <p class="muted">
+                My interests include front-end development, small ML/AI experiments, and learning by doing.
+              </p>
+            </div>
+            <div class="skills reveal-on-scroll">
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">C</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+             <!-- Work -->
+       <section id="work" class="section">
+         <div class="container">
+           <h3 class="section__title reveal-on-scroll">Work</h3>
+           <div class="timeline">
+             <article class="card reveal-on-scroll">
+               <h4>Data Analyst Intern</h4>
+               <p class="muted">RupeeRedee • 2 Months</p>
+               <p>Marketing Team</p>
+               <div class="work-details">
+                 <div class="work-section">
+                   <h5>Role & Impact</h5>
+                   <p>Gained extensive practical and social knowledge about corporate operations. Created comprehensive dashboards for company analysis, providing actionable insights to the marketing team.</p>
+                 </div>
+                 <div class="work-section">
+                   <h5>Skills Used</h5>
+                   <div class="skill-tags">
+                     <span class="skill-tag">Power BI</span>
+                     <span class="skill-tag">SQL</span>
+                     <span class="skill-tag">Excel</span>
+                     <span class="skill-tag">Python</span>
+                   </div>
+                 </div>
+                 <div class="work-section">
+                   <h5>Key Achievements</h5>
+                   <ul class="achievement-list">
+                     <li>Developed interactive dashboards for company performance analysis</li>
+                     <li>Collaborated with marketing team to provide data-driven insights</li>
+                     <li>Learned corporate workflow and business processes</li>
+                   </ul>
+                 </div>
+               </div>
+             </article>
+            <article class="card reveal-on-scroll">
+              <h4>The Victors Club (College Tech Club)</h4>
+              <p class="muted">Volunteer • Design Team • 2023 – Present</p>
+              <div class="work-details">
+                <div class="work-section">
+                  <h5>Role</h5>
+                  <p>Volunteer designer in a tech club focused on AWS; created visual assets for events and managed design requirements for sessions and meetups.</p>
+                </div>
+                <div class="work-section">
+                  <h5>Focus & Activities</h5>
+                  <ul class="achievement-list">
+                    <li>Supported AWS-focused events and meetings (workshops, talks, and community sessions)</li>
+                    <li>Designed event posters, banners, and social media creatives aligned with club branding</li>
+                    <li>Collaborated with organizers and speakers to communicate session details clearly</li>
+                  </ul>
+                </div>
+                <div class="work-section">
+                  <h5>Skills Used</h5>
+                  <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Canva</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Teamwork</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+           </div>
+         </div>
+       </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <h3 class="section__title reveal-on-scroll">Education</h3>
+          <div class="grid cards">
+            <article class="card reveal-on-scroll">
+              <h4>B.Tech in CSE(AIML)</h4>
+              <p class="muted">2023 – 2027</p>
+              <p>Dronacharya College of Engineering</p>
+              <p class="muted">Coursework in Data Structures, Algorithms, Machine Learning, and Web Development.</p>
+            </article>
+                         <article class="card reveal-on-scroll">
+               <h4>Senior Secondary (CBSE)</h4>
+               <p class="muted">2023 • 87%</p>
+               <p>Focused on Mathematics, Physics, and Chemistry.</p>
+             </article>
+            <article class="card reveal-on-scroll">
+              <h4>Secondary (CBSE)</h4>
+              <p class="muted">2021 • 86%</p>
+              <p>Core subjects with strong foundation in Science and Mathematics.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <h3 class="section__title reveal-on-scroll">Certifications</h3>
+          <div class="grid cards">
+            <article class="card reveal-on-scroll">
+              <h4>Introduction to Artificial Intelligence</h4>
+              <p class="muted">Infosys Springboard</p>
+            </article>
+            <article class="card reveal-on-scroll">
+              <h4>Intro to SQL</h4>
+              <p class="muted">Kaggle</p>
+            </article>
+            <article class="card reveal-on-scroll">
+              <h4>Modernizing Python Applications: Migrating to Python 3.x</h4>
+              <p class="muted">Infosys Springboard</p>
+            </article>
+            <article class="card reveal-on-scroll">
+              <h4>Foundation Course on IR4.0 Technologies</h4>
+              <p class="muted">Edunet</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h3 class="section__title reveal-on-scroll">Projects</h3>
+          <div class="grid project-grid">
+            <article class="project-card reveal-on-scroll">
+              <div class="project-thumb">
+                <img src="movie recom.png" alt="Movie Recommendation System" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px 16px 0 0;" />
+              </div>
+              <div class="project-meta">
+                <h4>Movie Recommendation System</h4>
+                <p class="muted">Developed a movie recommendation system that suggests films based on user interests. The system analyzes movie datasets containing genres, ratings, and user preferences to apply content-based and collaborative filtering techniques, providing personalized movie suggestions that match individual viewing patterns and taste preferences.</p>
+                <div class="chip-row">
+                  <span class="chip">Python</span>
+                  <span class="chip">Machine Learning</span>
+                  <span class="chip">Data Analysis</span>
+                  <span class="chip">Web Deployment</span>
+                </div>
+                <a href="https://netflix-recommendation-model.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" style="margin-top: 12px; font-size: 12px;">View Project →</a>
+              </div>
+            </article>
+            <article class="project-card reveal-on-scroll">
+              <div class="project-thumb">
+                <img src="meme photo.jpg" alt="Meme Sentiment Analyzer" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px 16px 0 0;" />
+              </div>
+              <div class="project-meta">
+                <h4>Meme Sentiment Analyzer</h4>
+                <p class="muted">Developed a machine learning tool to analyze meme sentiment and societal impact using Python and scikit-learn. The system processes Twitter data to classify sentiment, assess virality, and visualize public reactions through NLP techniques, providing insights into digital culture trends and social media influence.</p>
+                <div class="chip-row">
+                  <span class="chip">Python</span>
+                  <span class="chip">NLP</span>
+                  <span class="chip">scikit-learn</span>
+                  <span class="chip">Data Visualization</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h3 class="section__title reveal-on-scroll">Contact</h3>
+          <p class="muted reveal-on-scroll">Connect with me</p>
+          <div class="socials reveal-on-scroll">
+            <a class="social-btn social-btn--linkedin" href="https://www.linkedin.com/in/dhairyarohilla-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.41c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.41-2.07 2.86v5.5H9.46V9.75h3.42v1.46h.05c.48-.9 1.65-1.84 3.4-1.84 3.63 0 4.3 2.39 4.3 5.49v5.59zM5.34 8.29a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9.75h3.57v10.7z"/></svg>
+            </a>
+            <a class="social-btn social-btn--github" href="https://github.com/DhairyaX" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.63 22.42c.57.1.78-.25.78-.56v-2.1c-3.18.69-3.85-1.37-3.85-1.37-.52-1.3-1.27-1.65-1.27-1.65-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.74-1.53-2.54-.29-5.21-1.27-5.21-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.14 1.17.91-.25 1.88-.38 2.84-.38.97 0 1.94.13 2.85.38 2.17-1.48 3.13-1.17 3.13-1.17.62 1.59.24 2.76.12 3.05.73.8 1.17 1.82 1.17 3.07 0 4.39-2.68 5.35-5.23 5.64.41.35.79 1.02.79 2.07v3.07c0 .31.2.67.79.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="social-btn social-btn--instagram" href="https://www.instagram.com/dhairyeaahh?igsh=MWQxczE1aTd6MnRtNg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.06 1.95.25 2.67.54.73.28 1.35.66 1.96 1.27.61.61.99 1.23 1.27 1.96.29.72.48 1.5.54 2.67.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.95-.54 2.67a5.04 5.04 0 0 1-1.27 1.96 5.04 5.04 0 0 1-1.96 1.27c-.72.29-1.5.48-2.67.54-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.95-.25-2.67-.54a5.04 5.04 0 0 1-1.96-1.27 5.04 5.04 0 0 1-1.27-1.96c-.29-.72-.48-1.5-.54-2.67C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.06-1.17.25-1.95.54-2.67.28-.73.66-1.35 1.27-1.96.61-.61 1.23-.99 1.96-1.27.72-.29 1.5-.48 2.67-.54C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.52.01-4.76.07-.98.05-1.52.21-1.87.35-.47.18-.81.39-1.17.75-.36.36-.57.7-.75 1.17-.14.35-.3.89-.35 1.87-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05.98.21 1.52.35 1.87.18.47.39.81.75 1.17.36.36.7.57 1.17.75.35.14.89.3 1.87.35 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.98-.05 1.52-.21 1.87-.35.47-.18.81-.39 1.17-.75.36-.36.57-.7.75-1.17.14-.35.3-.89.35-1.87.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-.98-.21-1.52-.35-1.87-.18-.47-.39-.81-.75-1.17a3.31 3.31 0 0 0-1.17-.75c-.35-.14-.89-.3-1.87-.35-1.24-.06-1.61-.07-4.76-.07Zm0 3.6a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8Zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm5.88-2.22a1.26 1.26 0 1 1 0 2.52 1.26 1.26 0 0 1 0-2.52Z"/></svg>
+            </a>
+            <a class="social-btn social-btn--mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=rohilladhairya139@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h16c1.11 0 2-.9 2-2V6c0-1.1-.89-2-2-2Zm0 3.2-8 5.2-8-5.2V6l8 5.2L20 6v1.2Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Dhairya. All rights reserved.</p>
+        <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <script type="module" src="three-scene.js"></script>
+  </body>
+  </html>
+
+
